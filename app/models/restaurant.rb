@@ -1,5 +1,5 @@
 class Restaurant < ApplicationRecord
-  has_many :foods, foreign_key: "restaurant_id"
+  has_many :foods
 
-  validates :name, :delivery_fee, :time, presence :true
+  validates :name, :delivery_fee, :time, presence: true
 end
