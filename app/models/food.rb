@@ -1,4 +1,5 @@
 class Food < ApplicationRecord
+  has_one :line_food
   belongs_to :restaurant, foreign_key: "restaurant_id"
 
   validates :name, :price, :description, presence: true
